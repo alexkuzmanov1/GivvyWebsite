@@ -1,0 +1,65 @@
+/* GivvyWebsite/src/App.css */
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.dots-navigation {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #000;
+    /* Add a border to make the buttons visible */
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button.active {
+    background-color: #3498db;
+}
+
+.outer-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.button:active,
+.button:focus {
+    background-color: #C775D5;
+}
+
+.button:active+.outer-ring,
+.button:focus+.outer-ring {
+    background: conic-gradient(#C471CE 0% 75%, transparent 75%);
+}

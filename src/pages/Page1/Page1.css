@@ -1,0 +1,14 @@
+/* GivvyWebsite/src/pages/Page1.css */
+.page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../public/homeimage.png') 50% / cover no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 67rem;
+    height: 48rem;
+    flex-shrink: 0;
+    margin-left: 23rem;
+}
