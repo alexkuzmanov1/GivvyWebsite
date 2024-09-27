@@ -1,4 +1,3 @@
-/* GivvyWebsite/src/App.css */
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -33,14 +32,14 @@ section {
     background-color: white;
     border-radius: 50%;
     border: 2px solid #000;
-    /* Add a border to make the buttons visible */
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .button.active {
-    background-color: #3498db;
+    background-color: #C775D5;
+    /* Active button color */
 }
 
 .outer-ring {
@@ -54,12 +53,10 @@ section {
     transition: background 0.3s ease;
 }
 
-.button:active,
-.button:focus {
-    background-color: #C775D5;
+.button.active+.outer-ring {
+    background: conic-gradient(#C471CE 0% 75%, transparent 75%);
 }
 
-.button:active+.outer-ring,
-.button:focus+.outer-ring {
-    background: conic-gradient(#C471CE 0% 75%, transparent 75%);
+.button:not(.active)+.outer-ring {
+    background: none;
 }
