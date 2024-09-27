@@ -1,14 +1,57 @@
-/* GivvyWebsite/src/pages/Page1.css */
 .page1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../../../public/homeimage.png') 50% / cover no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.image-container {
+    background: url('/homeimage.png') 50% / cover no-repeat;
+    background-size: cover;
     width: 67rem;
     height: 48rem;
-    flex-shrink: 0;
-    margin-left: 23rem;
+    margin-left: 12rem
+}
+
+/* Main button styling */
+.store-button {
+    background: linear-gradient(145deg, #D36EFF, #A94FBC);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 1;
+}
+
+/* Hover effect */
+.store-button:hover {
+    fill: rgba(69, 38, 136, 0.15);
+    stroke-width: 0.6px;
+    stroke: #924CB9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30) inset;
+    backdrop-filter: blur(2px);
+
+}
+
+/* Active (pressed) state */
+.store-button:active {
+    transform: translateY(2px);
+    /* Button gets pressed down */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    /* Box shadow on all sides */
 }

@@ -1,7 +1,7 @@
 // GivvyWebsite/src/components/NavBar/NavBar.jsx
 import React, { useState } from "react";
 import "./NavBar.css";
-import givvyLogo from "../../../public/givvylogo.png"; // Import the logo
+import givvyLogo from "/givvylogo.png"; // Import the logo
 
 const NavBar = () => {
     const [active, setActive] = useState("HOME");
@@ -13,6 +13,7 @@ const NavBar = () => {
             <div className="logo-container">
                 <img src={givvyLogo} alt="Givvy Logo" className="logo" />
             </div>
+            <div className="vertical-line"></div>
             <ul className="nav-items">
                 {navItems.map((item) => (
                     <li
@@ -24,6 +25,7 @@ const NavBar = () => {
                     </li>
                 ))}
             </ul>
+            <button className="earn-money-button">Earn Money</button>
         </nav>
     );
 };

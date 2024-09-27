@@ -7,16 +7,18 @@
     background-color: transparent;
     padding: 10px;
     display: flex;
-    justify-content: start;
-    /* Adjust to space between logo and nav items */
+    justify-content: space-between;
+    /* Ensure space between logo and nav items */
     align-items: center;
     z-index: 1000;
-    border-bottom: none;
+    border-bottom: 1px solid grey;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
+    margin-left: 1.8rem;
+    /* Position the logo 7 rem from the left side */
 }
 
 .logo {
@@ -28,12 +30,14 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    /* Reduce gap for better responsiveness */
+    flex-grow: 1;
+    /* Allow nav items to take up remaining space */
+    justify-content: start;
+    /* Center the nav items */
 }
 
 .nav-item {
     font-size: 16px;
-    /* Adjust font size for better responsiveness */
     color: #888;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -58,6 +62,38 @@
     border-radius: 2px;
 }
 
+.earn-money-button {
+    background-color: #38316533;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    filter: drop-shadow(1px 2px 23.2px rgba(0, 0, 0, 0.06));
+    margin-right: 7rem;
+}
+
+.vertical-line {
+    position: fixed;
+    /* Keeps the line in place when scrolling */
+    top: 0;
+    /* Starts from the top of the screen */
+    bottom: 0;
+    /* Extends to the bottom of the screen */
+    left: calc(2rem + 45px + 2.2rem);
+    /* Adjust the horizontal position (centered here) */
+    width: 1px;
+    /* Line thickness */
+    background-color: grey;
+    /* Line color */
+    z-index: 1000;
+    /* Keeps it above other content */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar {
@@ -78,6 +114,17 @@
     .logo {
         width: 40px;
     }
+
+    .logo-container {
+        margin-left: 2rem;
+        /* Adjust margin for smaller screens */
+    }
+
+    .earn-money-button {
+        margin-right: 2rem;
+        /* Adjust margin for smaller screens */
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -87,5 +134,9 @@
 
     .logo {
         width: 30px;
+    }
+
+    .earn-money-button {
+        font-size: 14px;
     }
 }

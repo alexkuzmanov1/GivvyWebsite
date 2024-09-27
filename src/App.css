@@ -1,3 +1,4 @@
+/* GivvyWebsite/src/App.css */
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -7,6 +8,8 @@
 section {
     scroll-snap-align: start;
     height: 100vh;
+    width: 100vw;
+
 }
 
 .dots-navigation {
