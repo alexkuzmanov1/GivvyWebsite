@@ -21,6 +21,10 @@
 /* Main button styling */
 .store-button {
     background: linear-gradient(145deg, #D36EFF, #A94FBC);
+    transform: translateX(-50%);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -31,10 +35,6 @@
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     z-index: 1;
 }
 

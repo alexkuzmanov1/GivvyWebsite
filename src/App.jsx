@@ -1,65 +1,27 @@
-// GivvyWebsite/src/App.jsx
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Page1 from "./pages/Page1/Page1";
 import Page2 from "./pages/Page2/Page2";
 import Page3 from "./pages/Page3/Page3";
+import Page4 from "./pages/Page4/Page4";
+import Page5 from "./pages/Page5/Page5";
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  const scrollRef = useRef(null);
-  const [activeSection, setActiveSection] = useState('section1');
-
-  const handleScroll = () => {
-    const sections = document.querySelectorAll('section');
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const sectionId = section.getAttribute('id');
-      if (sectionTop >= 0 && sectionTop < window.innerHeight / 2) {
-        setActiveSection(sectionId);
-      }
-    });
-  };
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    scrollContainer.addEventListener('scroll', handleScroll);
-
-    return () => {
-      scrollContainer.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <>
+    <Router>
       <NavBar />
-      <div ref={scrollRef} className="container" style={{ paddingTop: '70px' }}>
-        <nav className="dots-navigation">
-          <div className="button-container">
-            <a href="#section1" className={`button ${activeSection === 'section1' ? 'active' : ''}`}></a>
-            <div className="outer-ring"></div>
-          </div>
-          <div className="button-container">
-            <a href="#section2" className={`button ${activeSection === 'section2' ? 'active' : ''}`}></a>
-            <div className="outer-ring"></div>
-          </div>
-          <div className="button-container">
-            <a href="#section3" className={`button ${activeSection === 'section3' ? 'active' : ''}`}></a>
-            <div className="outer-ring"></div>
-          </div>
-        </nav>
-
-        <section id="section1">
-          <Page1 />
-        </section>
-        <section id="section2">
-          <Page2 />
-        </section>
-        <section id="section3">
-          <Page3 />
-        </section>
-      </div>
-    </>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/advertise" element={<Page2 />} />
+        <Route path="/monetize" element={<Page3 />} />
+        <Route path="/faq" element={<Page4 />} />
+        <Route path="/about" element={<Page5 />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

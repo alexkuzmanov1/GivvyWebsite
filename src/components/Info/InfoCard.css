@@ -1,0 +1,90 @@
+.card-container {
+    width: 31.17543rem;
+    height: 52.33664rem;
+    flex-shrink: 0;
+    border-radius: 1.42857rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(31, 27, 73, 0.55) 0%, rgba(19, 17, 45, 0.55) 100%);
+    box-shadow: 0px 4px 20px 0px #12102A;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    position: relative;
+}
+
+.pinkdot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.pinkdot.top {
+    top: -1.05rem;
+}
+
+.pinkdot.bottom {
+    bottom: -1.05rem;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.card-image {
+    width: 16.22979rem;
+    height: 16.22979rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title {
+    width: 29.79536rem;
+    height: 2.07143rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.71429rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.14286rem;
+    letter-spacing: 0.03429rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    width: 22.60186rem;
+    height: 1.30693rem;
+    color: #6AA9FB;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 153.9%;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    width: 22.44736rem;
+    height: 11.25464rem;
+    color: #DDD;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 271%;
+    letter-spacing: 0.04rem;
+}

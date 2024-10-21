@@ -1,0 +1,43 @@
+.button-container {
+    position: relative;
+    width: 18.50207rem;
+    height: 5.71429rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.inner-button {
+    position: relative;
+    border-radius: 3.07143rem;
+    border: 0.5px solid #EB9BF6;
+    background: linear-gradient(180deg, #CB79DB 0%, #B764B7 93.05%);
+    width: 16.70271rem;
+    height: 3.6685rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.button-text {
+    color: #F4EAFD;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.85714rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.01857rem;
+    text-transform: uppercase;
+}

@@ -10,12 +10,14 @@
     align-items: center;
     z-index: 1000;
     border-bottom: 1px solid grey;
+    height: 5.7rem;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     margin-left: 1.8rem;
+    max-width: 7rem;
 }
 
 .logo {
@@ -32,97 +34,51 @@
 }
 
 .nav-item {
-    font-size: 16px;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
+    color: #534F79;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.71429rem;
+    text-transform: uppercase;
+}
+
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .nav-item.active {
-    color: white;
-    text-shadow: 0 0 8px rgba(98, 84, 84, 0.8);
+    font-weight: 700;
+    color: #FFF;
 }
 
-.nav-item:hover {
-    color: #ddd;
+.loginbutton-container {
+    position: absolute;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.nav-item.active::after {
-    content: "";
-    display: block;
-    margin: 5px auto 0;
-    width: 50%;
-    height: 3px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
-    border-radius: 2px;
+.login-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.71429rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    z-index: 1000000;
+    position: relative;
 }
 
-.earn-money-button {
-    background-color: #38316533;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
+.login-button {
+    width: 11.57143rem;
+    height: 3.42857rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    outline: none;
-    filter: drop-shadow(1px 2px 23.2px rgba(0, 0, 0, 0.06));
-    margin-right: 7rem;
-}
-
-.vertical-line {
-    position: fixed;
-    /* Keeps the line in place when scrolling */
-    top: 0;
-    /* Starts from the top of the screen */
-    bottom: 0;
-    /* Extends to the bottom of the screen */
-    left: calc(2rem + 45px + 2.2rem);
-    /* Adjust the horizontal position (centered here) */
-    width: 1px;
-    /* Line thickness */
-    background-color: grey;
-    /* Line color */
-    z-index: 1000;
-    /* Keeps it above other content */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-items {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .nav-item {
-        font-size: 14px;
-    }
-
-    .logo {
-        width: 40px;
-    }
-
-    .logo-container {
-        margin-left: 2rem;
-        /* Adjust margin for smaller screens */
-    }
-
-    .earn-money-button {
-        margin-right: 2rem;
-        /* Adjust margin for smaller screens */
-        margin-top: 20px;
-    }
+    position: absolute;
 }
 
 @media (max-width: 480px) {
@@ -134,7 +90,18 @@
         width: 30px;
     }
 
-    .earn-money-button {
-        font-size: 14px;
+    .login-button {
+        height: 2rem;
+        /* Adjust the height for smaller screens */
     }
+}
+
+.vertical-line {
+    position: fixed;
+    top: 0;
+    left: 7rem;
+    width: 1px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.16);
+    z-index: 1000;
 }
