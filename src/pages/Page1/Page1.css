@@ -1,57 +1,141 @@
-.page1 {
+.grid-first {
+    margin-top: 15rem;
+    margin-left: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.column-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services {
+    margin-bottom: 9rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
     width: 100%;
-    height: 100%;
-    color: white;
+    padding: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    /* padding: 0.5rem; */
+}
+
+.large-text {
     text-align: center;
-    flex-shrink: 0;
-    position: relative;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.71429rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05714rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #6BADFC 45.59%, #5E68F6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.image-container {
-    background: url('/homeimage.png') 50% / cover no-repeat;
-    background-size: cover;
-    width: 67rem;
-    height: 48rem;
-    margin-left: 12rem
+.large-text-alt {
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.71429rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05714rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #5E6AF6 0%, #DF669F 76.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Main button styling */
-.store-button {
-    background: linear-gradient(145deg, #D36EFF, #A94FBC);
-    transform: translateX(-50%);
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 1.5rem;
-    left: 50%;
-    z-index: 1;
+.large-text-alt2 {
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.71429rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.05714rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #DF669F 4.99%, #F6565B 94.79%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Hover effect */
-.store-button:hover {
-    fill: rgba(69, 38, 136, 0.15);
-    stroke-width: 0.6px;
-    stroke: #924CB9;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30) inset;
-    backdrop-filter: blur(2px);
-
+.small-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.42857rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.05714rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
 }
 
-/* Active (pressed) state */
-.store-button:active {
-    transform: translateY(2px);
-    /* Button gets pressed down */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    /* Box shadow on all sides */
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.horn-image {
+    width: 100%;
+    height: auto;
+}
+
+.advertise-card {
+    margin-bottom: 2rem;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 8rem;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

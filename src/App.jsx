@@ -8,10 +8,12 @@ import Page4 from "./pages/Page4/Page4";
 import Page5 from "./pages/Page5/Page5";
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollTop/ScrollTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Page1 />} />
