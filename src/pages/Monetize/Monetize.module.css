@@ -1,0 +1,96 @@
+.grid-first {
+    margin-top: 15rem;
+    margin-left: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.column-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.services {
+    margin-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 8rem;
+    margin-bottom: 10rem;
+    margin-left: 7rem;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card {
+    width: 42.43664rem;
+    height: 40.13107rem;
+    flex-shrink: 0;
+    border-radius: 1.42857rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.50);
+    background: linear-gradient(180deg, rgba(31, 27, 73, 0.55) 0%, rgba(19, 17, 45, 0.55) 100%);
+    box-shadow: 0px 4px 20px 0px #12102A;
+    backdrop-filter: blur(15px);
+}
+
+.info-card-image {
+    width: 14.94457rem;
+    height: 14.94457rem;
+    flex-shrink: 0;
+}
+
+.info-card-description {
+    display: flex;
+    width: 33.82493rem;
+    height: 7.27771rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #DDD;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 202%;
+    /* 2.02rem */
+    letter-spacing: 0.04rem;
+}
+
+.howitworks-image {
+    margin-top: 11rem;
+    margin-left: 8rem;
+    width: 100.581rem;
+    height: 42.06986rem;
+    flex-shrink: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
