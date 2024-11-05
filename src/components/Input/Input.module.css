@@ -1,0 +1,54 @@
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.title {
+    color: #DDD;
+    font-family: Montserrat;
+    font-size: 1.42857rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.19857rem;
+    /* 153.9% */
+    letter-spacing: 0.05714rem;
+    width: auto;
+    height: 2rem;
+    position: absolute;
+    top: -2.5rem;
+    /* Adjust as needed to position above the input */
+    left: 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 35.79521rem;
+    height: 4.46343rem;
+    background: url('../../assets/input.svg') no-repeat;
+    background-size: cover;
+}
+
+.input {
+    width: 95%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    padding-left: 2rem;
+    /* Adjust padding as needed */
+    color: #595779;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.85714rem;
+    /* 285.714% */
+    letter-spacing: 0.06rem;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #595779;
+    opacity: 0.5;
+}

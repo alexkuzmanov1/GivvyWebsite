@@ -2,11 +2,24 @@ import { Button } from 'react-scroll';
 import TextComponent from '../../components/TextComponent/TextComponent';
 import styles from './About.module.css';
 import questionSvg from '../../assets/question.svg';
+import inputSvg from '../../assets/input.svg';
+import Input from '../../components/Input/Input';
 
 function About() {
     return (
         <>
-            <div className={styles['grid-first']}>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <Input spanText="Your Name" placeholder="Name" />
+            {/* <div className={styles['grid-first']}>
                 <div className={styles['column-first']}>
                     <div className={styles['textcomponent']}>
                         <TextComponent
@@ -21,7 +34,8 @@ function About() {
                 <div className={styles['column-first']}>
                     <img src={questionSvg} alt="Horn" className={styles['horn-image']} />
                 </div>
-            </div>
+            </div> */}
+
         </>
     );
 }
