@@ -12,6 +12,7 @@ import cpaSvg from '../../assets/cpa.svg'; // Import the SVG
 import panelSvg from '../../../public/horn.svg'
 import styles from './Advertise.module.css'
 import InfoCard from '../../components/Info/InfoCard';
+import Input from '../../components/Input/Input';
 
 
 
@@ -142,6 +143,27 @@ function Advertise() {
                     title="Contact us"
                     subtitle="Let us know what's on your mind"
                     textAlign='center' />
+            </div>
+            <div className={styles['form']}>
+                <div className={styles['input-grid-1']}>
+                    <div className={styles['input-1']} >
+                        <Input spanText='Your Name' placeholder={"Name"} />
+                    </div>
+                    <div className={styles['input-2']} >
+                        <Input spanText='Your are' placeholder={"I'm an Advertiser"} />
+                    </div>
+                    <div className={styles['input-3']}>
+                        <Input spanText='Your E-mail :' placeholder={"E-mail"} />
+                    </div>
+                </div>
+                <div className={styles['input-wrapper']}>
+                    <span className={styles['title']}>Your Message</span>
+                    <span className={styles['smalltext']} >Lets us know the details of your case.</span>
+                    <div className={styles['image-container']}>
+                        <textarea type="text" placeholder='Type Here' className={styles['input']} />
+                    </div>
+                </div>
+                <Button text={"Submit"} />
             </div>
         </>
     );
