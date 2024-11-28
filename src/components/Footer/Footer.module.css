@@ -1,0 +1,161 @@
+.footer-container {
+    position: relative;
+    width: 123.43886rem;
+    height: 45.88257rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer-background-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer-background-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.globe {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50.08607rem;
+    height: 48.7885rem;
+    flex-shrink: 0;
+    z-index: 3;
+}
+
+.footer-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* Main grid with two columns */
+    gap: 9rem;
+    /* Gap between the first column and the nested grid */
+    z-index: 4;
+    margin-left: -35rem;
+    /* Add left margin to position the grid */
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 9rem;
+}
+
+.givvy-white {
+    width: 13.84693rem;
+    height: 5.201rem;
+    flex-shrink: 0;
+}
+
+.footer-text {
+    width: 23.24707rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.28571rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.92857rem;
+    /* 150% */
+    margin-top: 2rem;
+}
+
+.footer-button {
+    margin-top: 7rem;
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Nested grid with two columns */
+    gap: 4.5rem;
+    /* Gap between the second and third columns */
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 9rem;
+}
+
+.menu-title {
+    width: 7.01129rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.57143rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.42857rem;
+    /* 218.182% */
+    text-transform: uppercase;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.menu-buttons .child {
+    width: 11.96021rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.28571rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.42857rem;
+    /* 188.889% */
+}
+
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 9rem;
+}
+
+.info-title {
+    width: 7.01129rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.57143rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.42857rem;
+    /* 218.182% */
+    text-transform: uppercase;
+}
+
+.info-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.info-buttons .child {
+    width: 11.96021rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.28571rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.42857rem;
+    /* 188.889% */
+}

@@ -1,0 +1,82 @@
+.expandable-container {
+    width: 89.45479rem;
+    height: 5.37143rem;
+    flex-shrink: 0;
+    background: rgba(20, 18, 47, 0.60);
+    border: 0.6px solid #55558E;
+    box-shadow: inset 0px 2px 6.3px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+
+.expandable-container.expanded {
+    height: auto;
+    background: rgba(20, 18, 47, 0.80);
+    /* Adjust background for expanded state */
+    border: 1px solid #55558E;
+    /* Adjust border for expanded state */
+    box-shadow: inset 0px 4px 12.6px 0px rgba(0, 0, 0, 0.40);
+    /* Adjust box-shadow for expanded state */
+    padding: 2rem;
+    /* Adjust padding for expanded state */
+    padding-bottom: 5rem;
+    /* Add padding to ensure 5rem space from the bottom */
+    flex-direction: column;
+    /* Change flex direction to column */
+    align-items: flex-start;
+    /* Align items to the start */
+}
+
+.cross {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+}
+
+.text-container {
+    display: flex;
+    width: 51.01671rem;
+    height: 3.43836rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.42857rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.85714rem;
+    /* 200% */
+    letter-spacing: 0.08571rem;
+    text-transform: capitalize;
+    margin-left: 5rem;
+    /* Adjust margin to position text correctly */
+}
+
+.expandable-container.expanded .text-container {
+    margin-left: 0;
+    /* Remove left margin for expanded state */
+    margin-bottom: 1rem;
+    /* Add bottom margin to separate from expanded content */
+}
+
+.expanded-content {
+    padding: 1rem;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    margin-left: 5rem;
+}

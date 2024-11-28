@@ -9,6 +9,7 @@ import About from "./pages/About/About";
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollTop/ScrollTop';
+import Faq from './pages/Faq/Faq';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/publisher' element={<Publisher />} />
         <Route path='/advertiser' element={<Advertiser />} />
         <Route path='/about' element={<About />} />
+        <Route path='/faq' element={<Faq />} />
       </Routes>
       <Footer />
     </Router>

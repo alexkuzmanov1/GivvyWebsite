@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from 'react-router-dom';
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 import givvyLogo from "/givvylogo.png"; // Import the logo
 import loginButton from "../../assets/loginbutton.svg"; // Import the login button SVG
 
@@ -16,25 +16,25 @@ const NavBar = () => {
     ];
 
     return (
-        <nav className="navbar">
-            <div className="logo-container">
-                <img src={givvyLogo} alt="Givvy Logo" className="logo" />
+        <nav className={styles['navbar']}>
+            <div className={styles['logo-container']}>
+                <img src={givvyLogo} alt="Givvy Logo" className={styles['logo']} />
             </div>
-            <div className="vertical-line"></div>
-            <ul className="nav-items">
+            <div className={styles['vertical-line']}></div>
+            <ul className={styles['nav-items']}>
                 {navItems.map((item) => (
                     <li
                         key={item.name}
-                        className={`nav-item ${active === item.name ? "active" : ""}`}
+                        className={`${styles['nav-item']} ${active === item.name ? "active" : ""}`}
                         onClick={() => setActive(item.name)}
                     >
                         <Link to={item.path}>{item.name}</Link>
                     </li>
                 ))}
             </ul>
-            <div className="loginbutton-container">
-                <span className="login-text">LOG IN</span>
-                <img src={loginButton} alt="Log In" className="login-button" />
+            <div className={styles['loginbutton-container']}>
+                <span className={styles['login-text']}>LOG IN</span>
+                <img src={loginButton} alt="Log In" className={styles['login-button']} />
             </div>
         </nav>
     );

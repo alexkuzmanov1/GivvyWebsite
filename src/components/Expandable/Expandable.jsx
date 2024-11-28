@@ -1,29 +1,24 @@
 import { useState } from 'react';
-import './Expandable.css';
-import expandableBg from '../../assets/expandable.svg'; // Import the SVG background
+import styles from './Expandable.module.css';
+import pinkcrossSvg from '../../assets/pinkcross.svg';
+import minuscrossSvg from '../../assets/pinkminus.svg';
 
 const ExpandableComponent = () => {
-    const [isActive, setIsActive] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
 
-    const toggleActiveState = () => {
-        setIsActive(!isActive);
+    const handleToggle = () => {
+        setIsExpanded(!isExpanded);
     };
 
     return (
-        <div
-            className={`container ${isActive ? 'active' : 'inactive'}`}
-            onClick={toggleActiveState}
-            style={{ backgroundImage: !isActive ? `url(${expandableBg})` : 'none' }}
-        >
-            {/* Title that remains visible in both states */}
-            <div className="inactive-text">
-                How Can I Advertise My Product Or Service With You?
+        <div className={`${styles['expandable-container']} ${isExpanded ? styles['expanded'] : ''}`} onClick={handleToggle}>
+            <img src={isExpanded ? minuscrossSvg : pinkcrossSvg} alt="Cross" className={styles['cross']} />
+            <div className={styles['text-container']}>
+                Your Text Here
             </div>
-
-            {/* Content that only shows when the component is active */}
-            {isActive && (
-                <div className="active-content">
-                    What Types Of Offers Can I Promote With You?
+            {isExpanded && (
+                <div className={styles['expanded-content']}>
+                    Expanded content goes here.
                 </div>
             )}
         </div>

@@ -15,7 +15,6 @@ import gatemediaSvg from '../../assets/gatemedia.svg';
 import tvtwoSvg from '../../assets/tvtwo.svg';
 import timewallSvg from '../../assets/timewall.svg';
 import studiosSvg from '../../assets/studios.svg';
-import Lottie from "lottie-react";
 
 
 function Home() {

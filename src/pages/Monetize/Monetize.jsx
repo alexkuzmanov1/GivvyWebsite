@@ -1,6 +1,5 @@
 import TextComponent from '../../components/TextComponent/TextComponent'
 import Button from '../../components/Button/Button'
-import panelSvg from '../../../public/horn.svg'
 import styles from './Monetize.module.css'
 import InfoCard from '../../components/Info/InfoCard'
 import lightweightSvg from '../../assets/lightweight.svg'
